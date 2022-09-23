@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk=self.webpackChunk||[]).push([[331],{78498:function(i,t,e){e.r(t);var c=e(64593),s=e(85893),n=function(){return(0,s.jsxs)("div",{children:[(0,s.jsxs)(c.q,{children:[(0,s.jsx)("meta",{charSet:"utf-8"}),(0,s.jsx)("title",{children:"Analytics"})]}),(0,s.jsx)("p",{children:"This is umi docs."})]})};t.default=n}}]);

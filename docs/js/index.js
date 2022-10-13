@@ -23,15 +23,15 @@ var Star = function (x,y,radius,size,color) {
 		const lastPos = {x:this.x, y:this.y}
 
 		if(this.temp > 1) {
-			this.alpha -= 0.009;
+			this.alpha -= 0.006;
 		} else {
-			this.temp += 0.009;
-			this.alpha += 0.009;
+			this.temp += 0.008;
+			this.alpha += 0.008;
 		}
 
 		if(this.alpha <= 0) this.alpha =0
 
-		this.radians += Math.random() * 0.05;	
+		this.radians += Math.random() * 0.01;	
 		this.x = this.last.x + Math.cos(this.radians) * this.radius;
 		this.y = this.last.y + Math.sin(this.radians) * this.radius;
 

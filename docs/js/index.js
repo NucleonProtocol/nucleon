@@ -106,11 +106,11 @@ function animate() {
 init();
 animate();
 
-addEventListener('mousedown', function (e) {
-	var posX = Math.random() * canvas.width;
-	var posY = Math.random() * canvas.height;
-	added.push(new Group(e.clientX, e.clientY, 100));
-});
+// addEventListener('mousedown', function (e) {
+// 	var posX = Math.random() * canvas.width;
+// 	var posY = Math.random() * canvas.height;
+// 	added.push(new Group(e.clientX, e.clientY, 100));
+// });
 addEventListener('resize', function () {
 	g.forEach(function (s) {
 		s.stars = [];

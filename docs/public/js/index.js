@@ -23,10 +23,10 @@ var Star = function (x,y,radius,size,color) {
 		const lastPos = {x:this.x, y:this.y}
 
 		if(this.temp > 1) {
-			this.alpha -= 0.005;
+			this.alpha -= 0.006;
 		} else {
-			this.temp += 0.008;
-			this.alpha += 0.008;
+			this.temp += 0.01;
+			this.alpha += 0.01;
 		}
 
 		if(this.alpha <= 0) this.alpha =0

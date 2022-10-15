@@ -84,7 +84,7 @@ function init() {
 		// var posX = Math.random() * canvas.width;
 		// var posY = Math.random() * canvas.height;
 		g.push(new Group(canvas.width/2, canvas.height/2, 100));		
-		if(g.length > 6) {
+		if(g.length > 5) {
 			g.splice(0,1);
 		}
 	},2500)

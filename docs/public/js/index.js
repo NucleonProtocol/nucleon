@@ -25,8 +25,8 @@ var Star = function (x,y,radius,size,color) {
 		if(this.temp > 1) {
 			this.alpha -= 0.006;
 		} else {
-			this.temp += 0.01;
-			this.alpha += 0.01;
+			this.temp += 0.008;
+			this.alpha += 0.008;
 		}
 
 		if(this.alpha <= 0) this.alpha =0
@@ -55,7 +55,7 @@ var Star = function (x,y,radius,size,color) {
 
 function Group (x, y, num) {
 	this.stars = [];
-	var moreRand = minMax(200, canvas.width);
+	var moreRand = minMax(100, canvas.width);
 	for(var i = 0; i < num; i++) {
 		this.stars.push(new Star(x,y,Math.random() * moreRand,Math.random() *5,getRandomColor()));
 	}
@@ -87,7 +87,7 @@ function init() {
 		if(g.length > 8) {
 			g.splice(0,1);
 		}
-	},2000)
+	},2600)
 }
 
 function animate() {

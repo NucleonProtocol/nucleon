@@ -93,7 +93,7 @@ function init() {
 function animate() {
 	requestAnimationFrame(animate);
 	ctx.globalAlpha = 1;
-	ctx.fillStyle = 'rgba(0, 0, 0,0.05)'
+	ctx.fillStyle = 'rgba(22, 22, 33,0.05)'
 	ctx.fillRect(0,0,canvas.width, canvas.height);
 	g.forEach(function(s) {
 		s.update();	

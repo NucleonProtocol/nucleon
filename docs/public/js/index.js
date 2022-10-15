@@ -5,7 +5,7 @@ canvas.style.background = "rgba(0, 0, 0,1)";
 
 var ctx = canvas.getContext('2d');
 
-const colors = ['#D9EAF9','#ffffff', '#a1a19b', '#bcbdcc'];
+const colors = ['#D9EAF9','#ffffff', '#a1a19b', '#bcbdcc','#161621'];
 
 var Star = function (x,y,radius,size,color) {
 	this.radians = Math.random() * (Math.PI *2);

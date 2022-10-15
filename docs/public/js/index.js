@@ -1,7 +1,7 @@
 var canvas = document.createElement('canvas');
 document.body.appendChild(canvas);
 canvas.width = window.innerWidth, canvas.height = window.innerHeight-100;
-canvas.style.background = "rgba(0, 0, 0,1)";
+canvas.style.background = "rgba(22, 22, 33,1)";
 
 var ctx = canvas.getContext('2d');
 
@@ -23,7 +23,7 @@ var Star = function (x,y,radius,size,color) {
 		const lastPos = {x:this.x, y:this.y}
 
 		if(this.temp > 1) {
-			this.alpha -= 0.006;
+			this.alpha -= 0.003;
 		} else {
 			this.temp += 0.008;
 			this.alpha += 0.008;
@@ -93,7 +93,7 @@ function init() {
 function animate() {
 	requestAnimationFrame(animate);
 	ctx.globalAlpha = 1;
-	ctx.fillStyle = 'rgba(0, 0, 0,0.05)'
+	ctx.fillStyle = 'rgba(22, 22, 33,0.05)'
 	ctx.fillRect(0,0,canvas.width, canvas.height);
 	g.forEach(function(s) {
 		s.update();	

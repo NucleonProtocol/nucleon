@@ -8,7 +8,7 @@ var ctx = canvas.getContext('2d');
 const colors = ['#D9EAF9','#ffffff','#a1a19b','#bcbdcc','#161621'];
 
 var Star = function (x,y,radius,size,color) {
-	this.radians = Math.random() * (Math.PI *2);
+	this.radians = Math.random() * (Math.PI *2) + 5;
 
 	this.x = x + Math.cos(this.radians) * radius;
 	this.y = y + Math.sin(this.radians) * radius;
@@ -55,7 +55,7 @@ var Star = function (x,y,radius,size,color) {
 
 function Group (x, y, num) {
 	this.stars = [];
-	var moreRand = minMax(200, canvas.width);
+	var moreRand = minMax(100, canvas.width);
 	for(var i = 0; i < num; i++) {
 		this.stars.push(new Star(x,y,Math.random() * moreRand,Math.random() *5,getRandomColor()));
 	}

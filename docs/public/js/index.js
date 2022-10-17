@@ -1,7 +1,7 @@
 var canvas = document.createElement('canvas');
 document.body.appendChild(canvas);
 canvas.width = window.innerWidth, canvas.height = window.innerHeight-100;
-canvas.style.background = "rgba(0, 0, 0,0.5)";
+canvas.style.background = "rgba(0, 0, 0, 0)";
 
 var ctx = canvas.getContext('2d');
 
